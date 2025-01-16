@@ -60,7 +60,7 @@ fn main() {
     println!("1.Array");
 
     let numbers: [i32; 5] = [1, 2, 3, 4, 5];
-    println!("the array is {:?}", numbers);
+    println!("the array is {:?}", numbers); //:? is used to print all the numbers in array
     let fruits: [&str; 3] = ["Apple", "Banana", "Orange"];
     println!("the first fruit is {}", fruits[0]);
     println!("the second fruit is {}", fruits[1]);
