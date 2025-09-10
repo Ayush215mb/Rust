@@ -72,7 +72,7 @@ fn main() {
     let human: (&str, i32, bool) = ("Ayush", 20, false);
     println!("Human Tuple: {:?}", human);
 
-    let mix_tuple = ("yadav", 40, true, [1, 2, 3, 4]);
+    let mix_tuple: (&'static str, i32, bool, [i32; 4]) = ("yadav", 40, true, [1, 2, 3, 4]);
     println!("Mix Tuple: {:?}\n", mix_tuple);
 
     //Slices: [1,2,3,4,5,]

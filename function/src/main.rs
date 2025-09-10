@@ -1,5 +1,5 @@
 //any variable and functions should be named in snake case(small letters and _ )
-
+//pubkey: 6T68GqyFLyB7yRZfWok5XU8dhki9hV8vtqY9Sr9nar3h
 fn main() {
     print_hello();
     print_height(200);
@@ -46,3 +46,53 @@ fn add(a: i32, b: i32) -> i32 {
 fn bmi(_height: f64, _weight: f64) -> f64 {
     _weight / (_height * _height)
 }
+
+// use eframe::egui;
+
+// struct ScreenTimeApp {
+//     data: Vec<(String, String)>, // (App Name, Time Spent)
+// }
+
+// impl Default for ScreenTimeApp {
+//     fn default() -> Self {
+//         Self {
+//             data: vec![
+//                 ("Chrome".to_string(), "01:25:33".to_string()),
+//                 ("VSCode".to_string(), "00:42:10".to_string()),
+//                 ("Discord".to_string(), "00:15:55".to_string()),
+//             ],
+//         }
+//     }
+// }
+
+// impl eframe::App for ScreenTimeApp {
+//     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+//         egui::CentralPanel::default().show(ctx, |ui| {
+//             ui.heading("Screen Time Tracker");
+//             ui.separator();
+
+//             egui::Grid::new("app_usage_grid")
+//                 .striped(true)
+//                 .show(ui, |ui| {
+//                     ui.label(egui::RichText::new("App Name").strong());
+//                     ui.label(egui::RichText::new("Time Spent").strong());
+//                     ui.end_row();
+
+//                     for (app, time) in &self.data {
+//                         ui.label(app);
+//                         ui.label(time);
+//                         ui.end_row();
+//                     }
+//                 });
+//         });
+//     }
+// }
+
+// fn main() -> eframe::Result<()> {
+//     let options = eframe::NativeOptions::default();
+//     eframe::run_native(
+//         "Screen Time Tracker",
+//         options,
+//         Box::new(|_cc| Ok(Box::new(ScreenTimeApp::default()))), // ✅ wrap in Ok()
+//     )
+// }
